@@ -1,17 +1,11 @@
-#include "Engine.h"
-#include <iostream>
-#include <stdexcept>
+#include "Logger.h"
 
 int main() {
-    Raze::Engine engine;
-
-    try {
-        engine.run();
-    } catch (const std::exception& e) {
-        std::cerr << e.what() << '\n';
-        return EXIT_FAILURE;
-    }
-
-    return EXIT_SUCCESS;
+  Logger::setConfig(Logger::Config{true, true, true, true});
+  INFO("Logger ready!");
+  DEBUG("Test");
+  ERROR("Test");
+  WARN("Test");
+  
 }
 
