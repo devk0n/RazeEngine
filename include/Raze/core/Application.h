@@ -11,9 +11,6 @@ public:
   void run();
 
 private:
-  
 };
 
 #endif // APPLICATION_H
-
-
