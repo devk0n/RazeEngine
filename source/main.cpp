@@ -1,11 +1,16 @@
+#include "Application.h"
 #include "Logger.h"
 
 int main() {
-  Logger::setConfig(Logger::Config{true, true, true, true});
+
+  // Initialize Logger
+  Logger::setConfig(Logger::Config{false, true, false, true});
   INFO("Logger ready!");
-  DEBUG("Test");
-  ERROR("Test");
-  WARN("Test");
   
+  // Application entry point
+  Application app;
+  app.run();
+
+  return 0;
 }
 

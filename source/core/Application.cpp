@@ -1,11 +1,14 @@
 #include "Application.h"
 
 Application::Application() {
-    // Constructor
+  // Constructor
 }
 
 Application::~Application() {
-    // Destructor
+  // Destructor
 }
 
+void Application::run() {
+
+}
 
