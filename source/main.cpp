@@ -1,11 +1,17 @@
+#include "Engine.h"
 #include <iostream>
+#include <stdexcept>
 
 int main() {
-  
-  std::cout << "Welcome to RazeEngine!" << std::endl;
+    Raze::Engine engine;
 
-  Eigen::Vector3 = {1, 2, 3};
+    try {
+        engine.run();
+    } catch (const std::exception& e) {
+        std::cerr << e.what() << '\n';
+        return EXIT_FAILURE;
+    }
 
-  return 0;
+    return EXIT_SUCCESS;
 }
 
