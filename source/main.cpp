@@ -8,7 +8,7 @@ int main() {
   INFO("Logger ready!");
   
   // Application entry point
-  Application app;
+  Raze::Application app;
   app.run();
 
   return 0;

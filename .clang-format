@@ -4,8 +4,8 @@ TabWidth: 2
 UseTab: Never
 ColumnLimit: 120
 PointerAlignment: Left
-AlignConsecutiveDeclarations: true
-AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: false
+AlignConsecutiveAssignments: false
 AllowShortIfStatementsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Inline
 AllowShortBlocksOnASingleLine: false
